@@ -1,0 +1,11 @@
+:root {
+  --shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.search-form {
+  line-height: 2;
+  border-radius: 10px;
+  border: 1px rgb(128, 128, 12, 0.2) solid;
+  box-shadow: var(--shadow);
+  padding: 5px 10px;
+}
