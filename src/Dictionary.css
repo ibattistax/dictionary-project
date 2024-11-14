@@ -9,3 +9,18 @@
   box-shadow: var(--shadow);
   padding: 5px 10px;
 }
+
+footer {
+  opacity: 0.6;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 50px;
+}
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+footer a:hover {
+  text-decoration: underline;
+}
