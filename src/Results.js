@@ -5,7 +5,7 @@ import "./Dictionary.css";
 export default function Results(props) {
   if (props.results) {
     return (
-      <div uclassName="Results">
+      <div className="Results">
         <h2>{props.results.word}</h2>
         <p>{props.results.phonetic}</p>
         {props.results.meanings.map(function (meaning, index) {
