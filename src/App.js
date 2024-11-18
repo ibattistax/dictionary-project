@@ -5,13 +5,13 @@ function App() {
   return (
     <div className="App">
       <div className="container">
+        <span className="dots">•••</span>
         <header className="App-header">
           <h1>Dictionary</h1>
         </header>
         <main>
           <Dictionary />
         </main>
-        {/* <footer>Coded by Isabel Battista</footer> */}
       </div>
     </div>
   );

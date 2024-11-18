@@ -1,0 +1,10 @@
+:root {
+  --heading-text: "Delius Unicase", cursive;
+  --body-text: "Newsreader", serif;
+  --shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.phonetics {
+  margin-top: 0;
+  line-height: 2;
+}
