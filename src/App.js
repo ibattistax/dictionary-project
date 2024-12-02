@@ -7,7 +7,7 @@ function App() {
       <div className="container">
         <span className="dots">•••</span>
         <header className="App-header">
-          <h1>Dictionary</h1>
+          <h1>English Dictionary</h1>
         </header>
         <main>
           <Dictionary />
