@@ -24,8 +24,8 @@ export default function Dictionary() {
   }
   return (
     <div>
-      <form onSubmit={search}>
-        <div className="form-container">
+      <div className="form-container">
+        <form onSubmit={search}>
           <input
             type="search"
             className="search-form"
@@ -35,9 +35,9 @@ export default function Dictionary() {
           <button type="submit" className="search-button">
             <i className="fa-solid fa-magnifying-glass search-button-icon"></i>
           </button>
-        </div>
-      </form>
-      <hr />
+        </form>
+      </div>
+
       <Results results={results} />
     </div>
   );
