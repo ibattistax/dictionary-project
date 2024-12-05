@@ -1,0 +1,10 @@
+.synonym-list {
+  list-style: none;
+  display: inline;
+  line-height: 0.3;
+}
+/* 
+.synonym-list li {
+  padding: 10px;
+  display: inline;
+} */

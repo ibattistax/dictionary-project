@@ -10,7 +10,7 @@ function App() {
           <h1>English Dictionary</h1>
         </header>
         <main>
-          <Dictionary />
+          <Dictionary defaultKeyword="dictionary" />
         </main>
       </div>
     </div>
