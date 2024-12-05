@@ -14,16 +14,6 @@ export default function Results(props) {
             </div>
           );
         })}
-        <footer>
-          Coded by Isabel Battista and open sourced on{" "}
-          <a
-            href="https://github.com/ibattistax/dictionary-project"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </a>
-        </footer>
       </div>
     );
   } else {
