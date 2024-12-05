@@ -3,9 +3,10 @@ import "./Synonyms.css";
 
 export default function Synonyms(props) {
   console.log(props.synonyms);
-  if (props.synonyms !== null) {
+  if (props.synonyms) {
     return (
       <div className="Synonyms">
+        <strong>Synonyms</strong>
         {props.synonyms.slice(0, 5).map(function (synonym, index) {
           return (
             <div>
