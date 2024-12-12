@@ -4,6 +4,7 @@
   --shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   --background-colour: #d2dbc7;
 }
+
 body {
   margin: 80px 120px;
   background-color: var(--background-colour);
@@ -24,6 +25,7 @@ h1 {
   font-family: var(--heading-text);
   margin: 10px;
   text-align: center;
+  font-weight: bold;
 }
 h2 {
   font-size: 30px;
@@ -39,4 +41,13 @@ span {
 
 .dots {
   font-size: 36px;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  body {
+    margin: 30px 40px;
+  }
 }

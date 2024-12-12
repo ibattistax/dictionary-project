@@ -4,7 +4,7 @@ export default function Example(props) {
   if (props.example) {
     return (
       <div>
-        <strong>Example:</strong> <em>{props.example}</em>
+        <em className="text-muted">{props.example}</em>
         <br />
         <br />
       </div>

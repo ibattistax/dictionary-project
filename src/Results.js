@@ -2,7 +2,13 @@ import React from "react";
 import Meaning from "./Meaning";
 import "./Results.css";
 export default function Results(props) {
-  if (props.results) {
+  if (props.error) {
+    return (
+      <div className="Results">
+        <p>{props.error}</p>
+      </div>
+    );
+  } else if (props.results) {
     return (
       <div className="Results">
         <h2>{props.results.word}</h2>

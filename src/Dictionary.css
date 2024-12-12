@@ -13,7 +13,7 @@
   box-shadow: var(--shadow);
   padding: 5px 10px;
   background-color: transparent;
-  width: 280px;
+  max-width: 280px;
   margin: 20px auto;
 }
 .form-container {

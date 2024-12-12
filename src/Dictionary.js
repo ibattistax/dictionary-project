@@ -9,6 +9,7 @@ export default function Dictionary(props) {
   let [results, setResults] = useState(null);
   let [loaded, setLoaded] = useState(false);
   let [photos, setPhotos] = useState(null);
+  let [error, setError] = useState(false);
 
   function handleImagesResponse(response) {
     setPhotos(response.data.photos);
@@ -30,7 +31,12 @@ export default function Dictionary(props) {
     search();
   }
   function handleDictionaryResponse(response) {
-    setResults(response.data);
+    if (response.data.status === "not_found") {
+      setError("Oops! I don't know that word. Please try again.");
+    } else {
+      setResults(response.data);
+      setError(null);
+    }
   }
 
   function handleKeywordChange(event) {
@@ -53,13 +59,13 @@ export default function Dictionary(props) {
               onChange={handleKeywordChange}
             ></input>
             <button type="submit" className="search-button">
-              <i className="fa-solid fa-magnifying-glass search-button-icon"></i>
+              <i className="d-none d-md-inline fa-solid fa-magnifying-glass search-button-icon"></i>
             </button>
           </form>
         </div>
 
-        <Results results={results} />
-        <Photos photos={photos} />
+        <Results results={results} error={error} />
+        <Photos photos={photos} error={error} />
         <footer>
           Coded by Isabel Battista and open sourced on{" "}
           <a
